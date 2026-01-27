@@ -61,7 +61,28 @@
 <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
 <nav class="flex items-center gap-8">
 <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
-<a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#services">Services</a>
+<div class="relative group">
+<a class="text-white text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1 cursor-pointer" href="#services">
+Services
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</a>
+<div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+<div class="bg-white rounded-lg shadow-xl border border-slate-200 py-2 min-w-[200px]">
+<a href="/house-washing/" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-primary">home</span>
+<span class="font-semibold">House Washing</span>
+</a>
+<a href="#services" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-primary">road</span>
+<span class="font-semibold">Driveway Cleaning</span>
+</a>
+<a href="#services" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-primary">roofing</span>
+<span class="font-semibold">Roof Cleaning</span>
+</a>
+</div>
+</div>
+</div>
 <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
 <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
 </nav>
@@ -114,7 +135,7 @@
 <p class="text-slate-600 dark:text-slate-400 text-lg max-w-[720px]">We use the latest technology and eco-friendly solutions to safely remove years of build-up from your home.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="group flex flex-col gap-5 rounded-xl border border-[#dbe0e6] dark:border-slate-800 bg-white dark:bg-background-dark p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<a href="/house-washing/" class="group flex flex-col gap-5 rounded-xl border border-[#dbe0e6] dark:border-slate-800 bg-white dark:bg-background-dark p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="flex items-center justify-center size-14 rounded-lg bg-primary/10 text-primary">
 <span class="material-symbols-outlined text-3xl">home</span>
 </div>
@@ -122,10 +143,10 @@
 <h4 class="text-[#111418] dark:text-white text-xl font-bold">House Washing</h4>
 <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">Advanced soft wash techniques safe for vinyl siding, brick, stucco, and wood. Removes mold, algae, and dirt without damage.</p>
 </div>
-<a class="mt-auto text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+<span class="mt-auto text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
                         Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
 </a>
-</div>
 <div class="group flex flex-col gap-5 rounded-xl border border-[#dbe0e6] dark:border-slate-800 bg-white dark:bg-background-dark p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
 <div class="flex items-center justify-center size-14 rounded-lg bg-primary/10 text-primary">
 <span class="material-symbols-outlined text-3xl">road</span>
