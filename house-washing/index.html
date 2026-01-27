@@ -135,7 +135,32 @@
         <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
             <nav class="flex items-center gap-8">
                 <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="/">Home</a>
-                <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="/#services">Services</a>
+                <div class="relative group">
+                    <a class="text-white text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1 cursor-pointer" href="/#services">
+                        Services
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+                    </a>
+                    <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="bg-white rounded-lg shadow-xl border border-slate-200 py-2 min-w-[200px]">
+                            <a href="/house-washing/" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary">home</span>
+                                <span class="font-semibold">House Washing</span>
+                            </a>
+                            <a href="/driveway-cleaning/" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary">road</span>
+                                <span class="font-semibold">Driveway Cleaning</span>
+                            </a>
+                            <a href="/deck-cleaning/" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary">deck</span>
+                                <span class="font-semibold">Deck Cleaning</span>
+                            </a>
+                            <a href="/#services" class="flex items-center gap-3 px-4 py-3 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary">roofing</span>
+                                <span class="font-semibold">Roof Cleaning</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="/#about">About</a>
                 <a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="/#contact">Contact</a>
             </nav>
@@ -742,8 +767,8 @@
             <nav class="flex flex-col gap-2 text-sm">
                 <a class="hover:text-primary transition-colors" href="/house-washing/">House Washing</a>
                 <a class="hover:text-primary transition-colors" href="/driveway-cleaning/">Driveway Cleaning</a>
+                <a class="hover:text-primary transition-colors" href="/deck-cleaning/">Deck Cleaning</a>
                 <a class="hover:text-primary transition-colors" href="#">Roof Cleaning</a>
-                <a class="hover:text-primary transition-colors" href="#">Gutter Cleaning</a>
             </nav>
         </div>
         <div class="flex flex-col gap-4">
